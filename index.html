@@ -200,7 +200,7 @@
                                         CHOOSE FLAVOR
                                     </button>
                                 </div>
-                                <div class="col-4 border border-2" style="border-color: #0d4f9a !important; width: 220px; height: 100%;">
+                                <div class="col-4 border border-2 simple-pack" style="border-color: #0d4f9a !important; width: 220px; height: 100%;">
                                     <h3 class="package-pack">
                                         2 Packs <br>
                                         <span class="timeline" style="font-size: 25px; font-weight: 100; ">
@@ -225,7 +225,7 @@
                                         CHOOSE FLAVOR
                                     </button>
                                 </div>
-                                <div class="col-4 border border-2" style="border-color: #0d4f9a !important; width: 210px; height: 100%;">
+                                <div class="col-4 border border-2 simple-pack" style="border-color: #0d4f9a !important; width: 210px; height: 100%;">
                                     <h3 class="package-pack">
                                         3 Packs <br>
                                         <span class="timeline" style="font-size: 25px; font-weight: 100; ">
@@ -418,18 +418,18 @@
                 });
             });
             document.addEventListener("DOMContentLoaded", function() {
-            const verticalCarousel = document.querySelector(".multi-carousel-inner");
-            const carouselItems = document.querySelectorAll(".multi-carousel-item");
-            const productImageDisplay = document.querySelector(".product-image");
+                const verticalCarousel = document.querySelector(".multi-carousel-inner");
+                const carouselItems = document.querySelectorAll(".multi-carousel-item");
+                const productImageDisplay = document.querySelector(".product-image");
 
-            // Add click event listener to each carousel item
-            carouselItems.forEach(item => {
-                item.addEventListener("click", function(event) {
-                    const clickedImgSrc = event.target.getAttribute("src");
-                    productImageDisplay.setAttribute("src", clickedImgSrc);
+                // Add click event listener to each carousel item
+                carouselItems.forEach(item => {
+                    item.addEventListener("click", function(event) {
+                        const clickedImgSrc = event.target.getAttribute("src");
+                        productImageDisplay.setAttribute("src", clickedImgSrc);
+                    });
                 });
             });
-        });
 
         </script>
     </body>
