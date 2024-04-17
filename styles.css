@@ -5,11 +5,13 @@
     --rating-text: #2f84ed;
 }
 
+
 hr {
     color: var(--primary-color);
     opacity: 1;
     margin-top: 0;
 }
+
 
 .review-button {
     background-color: var(--primary-color);
@@ -122,7 +124,7 @@ h2.package-selection-heading{
 
 h3.package-pack{
     margin: inherit;
-    margin-top: 24px;
+    margin-top: 5px;
     font-size: 2.125em;
     color: var(--primary-color);
     font-family: "Lato","HelveticaNeue","Helvetica Neue",sans-serif;
@@ -187,11 +189,23 @@ h3.price-strike {
     font-weight: 500;
 }
 
-.community-picrures-text {
+.vertical-crousel {
+    overflow-y: auto; 
+    max-height: 500px; 
+    position: relative; 
+}
+
+.vertical-crousel::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;
+}
+
+.community-pictures-text {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 550;
     color: var(--primary-color);
     font-family: "Lato","HelveticaNeue","Helvetica Neue",sans-serif;
+    letter-spacing: 1.5px;
 }
 
 .list-unstyled li {
@@ -206,7 +220,8 @@ h3.price-strike {
 h3.second-section-heading {
     color: #333333;
     font-family: "Lato","HelveticaNeue","Helvetica Neue",sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.25em;
+    letter-spacing: .1em !important;
 }
 
 .info-container {
@@ -294,6 +309,7 @@ h3.second-section-heading {
     height: 650px;
 }
 
+
 @media only screen and (max-width: 768px) {
     a,span.nav-span,br{
         display: none;
@@ -309,6 +325,9 @@ h3.second-section-heading {
     }
     .product-image{
         height: 380px;
+    }
+    .icon {
+        display: none !important;
     }
     .simple-pack{
         display: flex !important;
@@ -335,9 +354,8 @@ h3.second-section-heading {
         font-size: 1.3125rem !important;
     }
     .choose-flavours-btn{
-        margin: 5px 0;
         width: 30%;
-        padding: 0 5px !important;
+        margin: 14px 0 !important;
         text-align: center;
     }
     .most-popular{
@@ -384,6 +402,10 @@ h3.second-section-heading {
         width: 100%;
         height: 100%;
     }
+    .second-section{
+        margin-left: 10px !important;
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -392,6 +414,9 @@ h3.second-section-heading {
     }
     .vertical-crousel {
         display: none;
+    }
+    .icon{
+        display: none !important;
     }
     h1.product-title {
         font-size: 1rem;
@@ -427,9 +452,8 @@ h3.second-section-heading {
         font-size: 1.3125rem !important;
     }
     .choose-flavours-btn{
-        margin: 5px 0;
         width: 30%;
-        padding: 0 5px !important;
+        margin: 14px 0 !important;
         text-align: center;
     }
     .most-popular{
@@ -476,5 +500,9 @@ h3.second-section-heading {
         margin: 10px 0;
         width: 100%;
         height: 100%;
+    }
+    .second-section{
+        margin-left: 10px !important;
+        font-size: 14px;
     }
 }
